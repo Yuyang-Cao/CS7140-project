@@ -99,6 +99,9 @@ MLM masks random words in the original text. Some of which is masked with <MASKE
   1. Random selection outperforms the base model, indicating that more training data is benefitcial to language models.
   2. DSIR results in better accuracy than DAPT in most tasks and is on par with DAPT on the rest, indicating the possbility for the automatic alternative to replace manual curation.
   
+  ## Conclusion
+  So this paper based itself on domain adaptive pretraining and explored how selecting data via importance resampling can help improve the performance of RoBERTa. It displays the possibility of DSIR to replace manual curation in selecting pretraining data sets. In conclusion, although there are a few areas that could use improvements (discussed in next section), DSIR showed some minor improvements and can be helpful.
+  
   ## Further discussion
   This paper defines distribution of data using the bag of words model. This is a simply and direct model and it works on giant data sets such as the internet text data. However, this might not be the best model due to its lack of considerations of other features such as ordering and meaning of each words. Whether there are other models that works better (and as fast) as a distribution on our data set remains an open question.
   
